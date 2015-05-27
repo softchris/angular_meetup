@@ -1,0 +1,7 @@
+{	
+    "TEST": "testing testing, one two",
+    "APPLICATION_HEADER": "My awesome app",
+	"SAVE" : "Save",
+	"CHANGE" : "change language to english",
+	"CHANGE_SV" : "change language to swedish"	
+}

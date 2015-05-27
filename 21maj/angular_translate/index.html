@@ -1,0 +1,25 @@
+<html>
+	<body ng-app="app">
+		<div ng-controller="appCtrl">
+			<h1>
+				{{ 'APPLICATION_HEADER' | translate }}
+			</h1>
+			
+			<button translate="SAVE"></button>
+			<p>
+				<button ng-click="switchLanguage('en')">{{ 'CHANGE' | translate }}</button> <br/>
+				<button ng-click="switchLanguage('sv')">{{ 'CHANGE_SV' | translate }}</button>	
+			</p>
+			
+		</div>
+		
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-translate/angular-translate.js"></script>
+		<script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+			
+		<script src="app.js"></script>
+		<script src="appCtrl.js"></script>
+		<script src="configStaticFiles.js"></script>		
+			
+	</body>
+</html>
