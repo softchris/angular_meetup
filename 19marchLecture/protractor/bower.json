@@ -1,0 +1,19 @@
+{
+  "name": "protractor",
+  "version": "0.0.0",
+  "authors": [
+    "christoffer n <christoffer.noring@softhouse.se>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "bootstrap": "~3.3.4"
+  }
+}

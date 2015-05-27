@@ -1,0 +1,26 @@
+{
+  "name": "bowerapp",
+  "version": "1.0.0",
+  "authors": [
+    "christoffer"
+  ],
+  "description": "test",
+  "keywords": [
+    "bower",
+    "test"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "lodash": ""
+  },
+  "dependencies": {
+    "utilities": "../own_package"
+  }
+}
