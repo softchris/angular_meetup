@@ -1,0 +1,32 @@
+<template>
+
+	<table>
+        <tr>
+            <th>
+            	Name
+            </th>
+            <th>
+            	Year
+            </th>
+        </tr>
+        <tr repeat.for="movie of movies">
+            <td>${ movie.title }</td>
+            <td>${ movie.year }</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>
+            	Name
+            </th>
+            <th>
+            	Home
+            </th>
+        </tr>
+        <tr repeat.for="avenger of avengers">
+            <td>${ avenger.name }</td>
+            <td>${ avenger.home }</td>
+        </tr>
+    </table>
+</template>

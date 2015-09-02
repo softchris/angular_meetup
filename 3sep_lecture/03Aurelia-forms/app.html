@@ -1,0 +1,25 @@
+<template>
+	<h3>${ person.name }</h3>
+
+	<input type="text" value.bind="person.name"> <br/>
+	<input type="checkbox" checked.bind="person.attendLecture"> Attend lecture <br/>
+
+	Meal choices:
+	<label repeat.for="mealtype of mealtypes">
+	  <input type="radio" name="mealtype" model.bind="mealtype" checked.bind="$parent.selectedMealType" />
+	  ${ mealtype }
+	</label>
+
+	Developer type:
+	<select value.bind="selectedDeveloperType" multiple>
+		<option>Select a developer type:</option>
+		<option repeat.for="developer of developers" model.bind="developer">
+			${ developer.name }
+		</option>
+	</select>
+	
+	<p>
+		<button click.trigger="save()">Save</button> 	
+	</p>
+	
+</template>

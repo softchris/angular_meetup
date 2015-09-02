@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'aurelia-framework' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 warn package.json @ No description
+5 warn package.json @ No repository field.
+6 warn package.json @ No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'aurelia-framework', null ]
+9 verbose cache add name=undefined spec="aurelia-framework" args=["aurelia-framework",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'aurelia-framework',
+10 verbose parsed url   path: 'aurelia-framework',
+10 verbose parsed url   href: 'aurelia-framework' }
+11 silly lockFile 2e690f64-aurelia-framework aurelia-framework
+12 verbose lock aurelia-framework C:\Users\cno\AppData\Roaming\npm-cache\2e690f64-aurelia-framework.lock
+13 silly lockFile 2e690f64-aurelia-framework aurelia-framework
+14 silly lockFile 2e690f64-aurelia-framework aurelia-framework
+15 verbose addNamed [ 'aurelia-framework', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 363e7730-aurelia-framework aurelia-framework@
+18 verbose lock aurelia-framework@ C:\Users\cno\AppData\Roaming\npm-cache\363e7730-aurelia-framework.lock
+19 silly addNameRange { name: 'aurelia-framework', range: '*', hasData: false }
+20 verbose url raw aurelia-framework
+21 verbose url resolving [ 'https://registry.npmjs.org/', './aurelia-framework' ]
+22 verbose url resolved https://registry.npmjs.org/aurelia-framework
+23 info trying registry request attempt 1 at 22:17:42
+24 http GET https://registry.npmjs.org/aurelia-framework
+25 http 404 https://registry.npmjs.org/aurelia-framework
+26 silly registry.get cb [ 404,
+26 silly registry.get   { 'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=0',
+26 silly registry.get     'content-length': '2',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sat, 29 Aug 2015 20:17:23 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-fra1234-FRA',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1440879442.713927,VS0,VE730' } ]
+27 silly lockFile 363e7730-aurelia-framework aurelia-framework@
+28 silly lockFile 363e7730-aurelia-framework aurelia-framework@
+29 error 404 Not Found
+29 error 404
+29 error 404 'aurelia-framework' is not in the npm registry.
+29 error 404 You should bug the author to publish it
+29 error 404
+29 error 404 Note that you can also install from a
+29 error 404 tarball, folder, or http url, or git url.
+30 error System Windows_NT 6.2.9200
+31 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "aurelia-framework"
+32 error cwd c:\dev\3sep_lecture\01Aurelia
+33 error node -v v0.10.28
+34 error npm -v 1.4.9
+35 error code E404
+36 verbose exit [ 1, true ]

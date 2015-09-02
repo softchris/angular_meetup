@@ -1,0 +1,22 @@
+<template>
+	<compose view="./templates/title"></compose>
+	<select value.bind="selectedJedi">
+		<option>Select a jedi:</option>
+		<option repeat.for="jedi of jedis" model.bind="jedi">
+			${ jedi.name }
+		</option>
+	</select>
+
+	<compose 
+		model.bind="selectedJedi" 
+		view-model="./templates/jedi" ></compose>
+
+	<require from="elements/user-detail"></require>
+	<user-detail user.bind="selectedJedi"></user-detail>	
+
+	Here comes some content
+	<p>
+		<time></time>
+		<test></test>
+	</p>
+</template>
