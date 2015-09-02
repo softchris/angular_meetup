@@ -1,8 +1,17 @@
 <template>
-	<fieldset style="width:20%">
-		<legend>Compose jedi</legend>	
-		<p>
-			${ data.name }
-		</p>
-	</fieldset>
+	<div class="well">
+		<h3>Compose jedi</h3>		
+		<div show.bind="data.name">
+			<p>
+				${ data.name }
+			</p>	
+		</div>
+		<div show.bind="!data.name">
+			-- no jedi chosen --
+		</div>
+		
+	</div>
+		
+		
+	
 </template>

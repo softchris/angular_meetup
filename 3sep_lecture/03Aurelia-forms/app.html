@@ -1,25 +1,33 @@
 <template>
 	<h3>${ person.name }</h3>
+	<form class="form-group">
+		<input class="form-control" type="text" value.bind="person.name"> <br/>
+		<h3>Single checkbox</h3>
+		<input  type="checkbox" checked.bind="person.attendLecture"> Attend lecture <br/>
 
-	<input type="text" value.bind="person.name"> <br/>
-	<input type="checkbox" checked.bind="person.attendLecture"> Attend lecture <br/>
+		<h3>
+			Meal choices:
+		</h3>
+		<label repeat.for="mealtype of mealtypes">
+		  <input type="radio" name="mealtype" model.bind="mealtype" checked.bind="$parent.selectedMealType" />
+		  ${ mealtype }
+		</label>
 
-	Meal choices:
-	<label repeat.for="mealtype of mealtypes">
-	  <input type="radio" name="mealtype" model.bind="mealtype" checked.bind="$parent.selectedMealType" />
-	  ${ mealtype }
-	</label>
+		<h3>
+		Developer type:
+		</h3>
 
-	Developer type:
-	<select value.bind="selectedDeveloperType" multiple>
-		<option>Select a developer type:</option>
-		<option repeat.for="developer of developers" model.bind="developer">
-			${ developer.name }
-		</option>
-	</select>
+		<select value.bind="selectedDeveloperType" multiple>
+			<option>Select a developer type:</option>
+			<option repeat.for="developer of developers" model.bind="developer">
+				${ developer.name }
+			</option>
+		</select>
+		
+		<p>
+			<button class="btn btn-primary" click.trigger="save()">Save</button> 	
+		</p>	
+	</form>
 	
-	<p>
-		<button click.trigger="save()">Save</button> 	
-	</p>
 	
 </template>

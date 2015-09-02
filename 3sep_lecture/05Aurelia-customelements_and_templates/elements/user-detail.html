@@ -1,14 +1,17 @@
 <template>
-	<fieldset style="width:20%">
-		<legend>Custom element</legend>
-		<p>
-		<h3>${ user.name }</h3>
-		</p>
+	<div class="well">
+		<h3>Custom element</h3>
+		<div show.bind="user.id">
+			Shows data from both lazy user and a more eager one  loaded through ajax
 
-		<p>
-			${ jedi.side }
-		</p>
-	</fieldset>
-	
-	
+			<h4> ${ user.name } </h4>
+			<p>
+				<i>${ jedi.side }</i>
+			</p>	
+		</div>
+		<div show.bind="!user.id">
+			-- No user selected --
+		</div>
+		
+	</div>
 </template>
