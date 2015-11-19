@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="app">
+
+
+
+	<div ng-controller="appCtrl">
+		<div ng-show="error" style="background: red; color: white; height: 30px; line-height: 30px">
+			{{error}}
+		</div>
+		<div ng-repeat="product in products">
+			{{product.name}}
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	
+</body>
+</html>

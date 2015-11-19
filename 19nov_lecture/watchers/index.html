@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="app">
+
+
+
+	<div ng-controller="appCtrl">
+		<div ng-bind="::prop"></div>
+		Expression: {{ ::prop }}
+		
+		<input ng-model="prop" />
+		<input ng-model="prop2" />
+		<input ng-model="prop3" />	
+	</div>
+
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	
+</body>
+</html>

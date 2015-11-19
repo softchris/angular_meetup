@@ -1,0 +1,16 @@
+{
+  "name": "pubsub",
+  "version": "0.0.0",
+  "homepage": "https://github.com/softchris/angular_meetup",
+  "authors": [
+    "christoffer n <christoffer.noring@softhouse.se>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
