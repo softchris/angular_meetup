@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body ng-app="app">
+	<test-multi-transclusion>
+		<title-part>my title</title-part>	
+		<footer-part>
+			<strong>footer</strong>
+		</footer-part>
+		remaining stuff to be transcluded
+	</test-multi-transclusion>
+
+	<div ng-controller="appCtrl">
+		parent value of prop: {{ obj.test }} <br/>
+
+		<button ng-click="change()">Change</button>
+		<test-component title="a text" 
+						callback="update()"
+						prop="obj.test">
+			transcluded content
+		</test-component>
+	</div>
+
+	<div ng-viewport></div>
+
+	<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="node_modules/angular-new-router/dist/router.es5.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script src="./components/home/home.js"></script>
+</body>
+</html>
